@@ -20,7 +20,7 @@ for col in df.columns:
 fig.update_layout(height=600, width=1200, title='Cuenca Aguan PPD (mm)')
 
 # Carga el archivo CSV
-df2 = pd.read_csv('Cangrejal.csv')
+df2 = pd.read_csv('https://github.com/BrianGallardo/INFOAGRO/blob/e02eb54f85773e583d7d1ba1a8fbb5f47ace923a/Cangrejal.csv')
 
 # Establece el índice para que coincida con la imagen
 df2.set_index('Longitud', inplace=True)
