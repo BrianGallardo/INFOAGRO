@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 import gunicorn
 
 # Carga el archivo CSV
-df = pd.read_csv('Aguan.csv')
+df = pd.read_csv('https://github.com/BrianGallardo/INFOAGRO/blob/8dc1e38a7b1b8ef20276c4476f819193a164a84b/Aguan.csv')
 
 # Establece el índice para que coincida con la imagen
 df.set_index('Longitud', inplace=True)
