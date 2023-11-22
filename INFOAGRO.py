@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 import gunicorn
 
 # Carga el archivo CSV
-df = pd.read_csv('C:/Users/mduron/Downloads/15-11-2023 12_00/Series de Tiempo/Cuencas/Aguan.csv')
+df = pd.read_csv('Aguan.csv')
 
 # Establece el índice para que coincida con la imagen
 df.set_index('Longitud', inplace=True)
@@ -20,7 +20,7 @@ for col in df.columns:
 fig.update_layout(height=600, width=1200, title='Cuenca Aguan PPD (mm)')
 
 # Carga el archivo CSV
-df2 = pd.read_csv('C:/Users/mduron/Downloads/15-11-2023 12_00/Series de Tiempo/Cuencas/Cangrejal.csv')
+df2 = pd.read_csv('Cangrejal.csv')
 
 # Establece el índice para que coincida con la imagen
 df2.set_index('Longitud', inplace=True)
@@ -34,7 +34,7 @@ for col in df2.columns:
 fig2.update_layout(height=600, width=1200, title='Cuenca Cangrejal PPD (mm)')
 
 # Carga el archivo CSV
-df3 = pd.read_csv('C:/Users/mduron/Downloads/15-11-2023 12_00/Series de Tiempo/Cuencas/Chamelecon.csv')
+df3 = pd.read_csv('Chamelecon.csv')
 
 # Establece el índice para que coincida con la imagen
 df3.set_index('Longitud', inplace=True)
@@ -175,4 +175,4 @@ def update_table3(selected_data):
     return selected_data.to_dict('records')
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='127.0.0.1', port=3000)
+    app.run_server(debug=True)
