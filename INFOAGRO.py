@@ -34,7 +34,7 @@ for col in df2.columns:
 fig2.update_layout(height=600, width=1200, title='Cuenca Cangrejal PPD (mm)')
 
 # Carga el archivo CSV
-df3 = pd.read_csv('Chamelecon.csv')
+df3 = pd.read_csv('https://github.com/BrianGallardo/INFOAGRO/blob/2bdadd2af27cd58ae64c0d95403e12b6ab51695e/Chamelecon.csv')
 
 # Establece el índice para que coincida con la imagen
 df3.set_index('Longitud', inplace=True)
