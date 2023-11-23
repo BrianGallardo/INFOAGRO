@@ -175,4 +175,4 @@ def update_table3(selected_data):
     return selected_data.to_dict('records')
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, host='https://briangallardo.github.io/INFOAGRO/')
